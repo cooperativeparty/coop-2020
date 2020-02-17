@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/wp-content/themes/coop-2019/img/icons/mstile-150x150.png?v=476e05ganj"/>
+            <TileColor>#3f1d70</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

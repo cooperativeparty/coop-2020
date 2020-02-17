@@ -1,0 +1,58 @@
+@mixin get-color-yiq($background) {
+    $r: red($background);
+    $g: green($background);
+    $b: blue($background);
+    $yiq: (($r*299) + ($g*587) + ($b*114))/1000;
+    @if ($yiq >=130) {
+        mix-blend-mode: multiply;
+    }
+    @else {
+        mix-blend-mode: lighten;
+    }
+}
+
+@mixin photofilter($parent, $color) {
+    #{$parent} {
+        &::before {
+            background-color: $color;
+            @include get-color-yiq($color);
+        }
+    }
+}
+
+// @supports (mix-blend-mode: lighten) {
+//     @each $color,
+//     $value in $colors {
+//         @include photofilter('.duotone-#{$color}', $value);
+//     }
+//     // .duotone {
+//     //     background-color: $white;
+//     //     display: flex;
+//     //     flex: 1 1 100%;
+//     //     height: 100%;
+//     //     overflow: hidden;
+//     //     position: relative;
+//     //     img {
+//     //         filter: grayscale(100%) contrast(1) blur(0);
+//     //         flex: 1 0 100%;
+//     //         height: 100%;
+//     //         max-width: 100%;
+//     //         mix-blend-mode: multiply;
+//     //         object-fit: cover;
+//     //         opacity: 1;
+//     //         position: relative;
+//     //         width: 100%;
+//     //     }
+//     //     &::before {
+//     //         bottom: 0;
+//     //         content: '';
+//     //         height: 100%;
+//     //         left: 0;
+//     //         position: absolute;
+//     //         right: 0;
+//     //         top: 0;
+//     //         width: 100%;
+//     //         z-index: 1;
+//     //     }
+//     // }
+// }

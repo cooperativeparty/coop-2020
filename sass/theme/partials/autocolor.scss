@@ -1,0 +1,62 @@
+@mixin autocolor($parent, $color) {
+    #{$parent} {
+        color: rgba(color-yiq($color), 0.8);
+        .input-group {
+            .form-control {
+                border: 1px solid $white;
+            }
+        }
+        .form-control {
+            border: 1px solid rgba(255, 255, 255, .3);
+        }
+        .list-group-item,
+        .list-group-item-action {
+            background-color: transparent;
+            color: rgba(color-yiq($color), 0.9);
+            &:hover {
+                background-color: rgba(invert(color-yiq($color)), 0.2);
+                color: color-yiq($color);
+            }
+        }
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .card-header,
+        .card-title,
+        .page-title {
+            color: color-yiq($color);
+            a {
+                color: inherit;
+            }
+        }
+        .text-muted {
+            color: rgba(color-yiq($color), 0.5)!important;
+        }
+        .lead {
+            color: rgba(color-yiq($color), 0.7);
+        }
+        a {
+            color: rgba(color-yiq($color), 0.9);
+        }
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    @include autocolor('.bg-#{$color}', $value);
+}
+
+@each $color,
+$value in $colors {
+    @include autocolor('.bg-#{$color}', $value);
+    @include bg-variant('.bg-#{$color}', $value);
+}

@@ -1,0 +1,14 @@
+.down-chevron {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 76%);
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 76%);
+}
+
+.hexagon {
+    -webkit-clip-path: polygon(75% 10%, 100% 52.5%, 75% 95%, 25% 95%, 0 51%, 25% 10%);
+    clip-path: polygon(75% 10%, 100% 52.5%, 75% 95%, 25% 95%, 0 51%, 25% 10%);
+}
+
+.triangle {
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}

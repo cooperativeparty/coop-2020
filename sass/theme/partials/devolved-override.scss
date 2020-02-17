@@ -1,0 +1,87 @@
+#KeyLinks {
+    display:none;
+}
+
+.term-scotland {
+    a {
+        color: $blue-dark;
+    }
+    .page-item.active .page-link {
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+    }
+    .duotone {
+       
+    }
+    .banner {
+        @extend .bg-indigo;
+        .duotone {
+          
+        }
+    }
+    .month-spacer {
+        border-bottom: 3px solid $blue-dark;
+    }
+    .footer-main {
+        @extend .bg-indigo;
+    }
+    .footer-end .site-footer p {
+        color: $blue-dark;
+    }
+    .nav-primary .navbar-nav .menu-item .nav-link:hover,
+    .nav-primary .navbar-nav .menu-item.dropdown.show>.nav-link,
+    .nav-primary .navbar-nav .menu-item.dropdown .dropdown-menu .container .menu-item .nav-link {
+        color: $blue-dark;
+    }
+    .nav-primary .navbar-nav .menu-item .nav-link:hover {
+        border-bottom: .25rem solid $blue-dark;
+    }
+    .nav-primary .navbar-nav .menu-item.current-menu-item .nav-link {
+        background-color: $blue-dark;
+        color: $white!important;
+    }
+}
+
+.term-wales {
+    #KeyLinks {
+        display: block;
+    }
+    a {
+        color: $red;
+    }
+    .page-item.active .page-link {
+        background-color: $red;
+        border-color: $red;
+    }
+    .duotone {
+       
+    }
+    .banner {
+        @extend .bg-red;
+        .duotone {
+        
+        }
+    }
+    .month-spacer {
+        border-bottom: 3px solid $red;
+    }
+    .footer-main {
+        @extend .bg-red;
+    }
+    .footer-end .site-footer p {
+        color: $red;
+    }
+    .site-main article.post .entry-header .byline .role,
+    .nav-primary .navbar-nav .menu-item .nav-link:hover,
+    .nav-primary .navbar-nav .menu-item.dropdown.show>.nav-link,
+    .nav-primary .navbar-nav .menu-item.dropdown .dropdown-menu .container .menu-item .nav-link {
+        color: $red;
+    }
+    .nav-primary .navbar-nav .menu-item .nav-link:hover {
+        border-bottom: .25rem solid $red;
+    }
+    .nav-primary .navbar-nav .menu-item.current-menu-item .nav-link {
+        background-color: $red;
+        color: $white!important;
+    }
+}

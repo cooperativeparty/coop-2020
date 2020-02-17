@@ -1,0 +1,19 @@
+{
+    "name": "Co-op Party",
+    "short_name": "Co-op Party",
+    "icons": [
+        {
+            "src": "/wp-content/themes/coop-2019/img/icons/android-chrome-192x192.png?v=476e05ganj",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/wp-content/themes/coop-2019/img/icons/android-chrome-256x256.png?v=476e05ganj",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#3f1d70",
+    "background_color": "#3f1d70",
+    "display": "standalone"
+}

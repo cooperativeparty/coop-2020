@@ -1,0 +1,71 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, hd: 1440px);
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, hd: 1380px);
+//
+// Color system
+//
+$red: #E42312;
+$orange: #Ff7f32;
+$yellow: #FFC431;
+$green-bright: #00b052;
+$green-dark: #00884A;
+$teal-bright: #00b0b9;
+$blue-bright: #009CDE;
+$blue-dark: #00158a;
+$purple-light: #C1AAE0;
+$purple-dark: #3F1D70;
+$white: #FFFFFF;
+$black: #000000;
+$gray-dark: #3C484D;
+$gray-mid: #9FACB2;
+$gray-light: #D5DDE0;
+$facebook: #3B5998;
+$whatsapp: #25D366;
+$twitter: #1DA1F2;
+$instagram: #8a3ab9;
+//Color Map
+$colors: ( "blue": $blue-bright, "indigo": $blue-dark, "purple": $purple-dark, "pink": $purple-light, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green-dark, "teal": $green-bright, "cyan": $teal-bright, "white": $white, "gray": $gray-mid, "gray-light": $gray-light, "gray-dark": $gray-dark);
+//Color theme map
+$primary: $purple-dark;
+$secondary: $gray-dark;
+$success: $green-dark;
+$info: $teal-bright;
+$warning: $yellow;
+$danger: $red;
+$light: $white;
+$dark: $black;
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark);
+$yiq-text-dark: $black;
+$yiq-text-light: $white;
+// Fonts
+$font-family-sans-serif: 'Archivo',
+sans-serif;
+//Forms
+// Headings
+$display1-weight: 600;
+$display2-weight: 600;
+$display3-weight: 600;
+$display4-weight: 600;
+$display-font-family: 'Oswald';
+$heading-font-family: 'Archivo Narrow';
+$impact-font-family: 'Archivo Black';
+$headings-color: $black;
+//Quick options
+$enable-rounded:false;
+$enable-gradients:false;
+$enable-shadows:false;
+$btn-border-radius: 0;
+// Basics of a navbar
+$navbar-border-radius: 0px;
+$input-border-color: $black;
+$input-color: $black;
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge( ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3), 6: ($spacer * 6), 7: ($spacer * 8)), $spacers);
+//Raise lightness threshold a little
